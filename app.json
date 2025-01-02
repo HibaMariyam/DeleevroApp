@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Deleevro",
+    "slug": "deleevro",
+    "version": "15.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/appicon.jpeg",
+    "scheme": "deleevro",
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD", 
+      "fallbackToCacheTimeout": 0          
+    },
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#000000"
+
+    
+    },
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hc.deleevro"
+    },
+    "android": {
+      "package": "com.hc.deleevro"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/appicon.jpeg"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }],
+       [ "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }],
+        [
+          "onesignal-expo-plugin",
+          {
+            "mode": "development"
+          }
+        ],
+        "./translucent-default-splash-screen-config"
+      ]
+    ,
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
