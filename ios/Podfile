@@ -34,7 +34,7 @@ install! 'cocoapods',
 
 prepare_react_native_project!
 
-target 'Deleevro' do
+target 'Ciboee' do
   use_expo_modules!
   config = use_native_modules!
 
@@ -76,9 +76,4 @@ target 'Deleevro' do
       Pod::UI.warn e
     end
   end
-end
-
-target 'OneSignalNotificationServiceExtension' do
-  pod 'OneSignalXCFramework', '>= 5.0', '< 6.0'
-  use_frameworks! :linkage => podfile_properties['ios.useFrameworks'].to_sym if podfile_properties['ios.useFrameworks']
 end

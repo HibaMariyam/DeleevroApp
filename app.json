@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Deleevro",
-    "slug": "deleevro",
-    "version": "15.0.0",
+    "name": "Ciboee",
+    "slug": "ciboee",
+    "version": "3.0.1",
     "orientation": "portrait",
-    "icon": "./assets/images/appicon.jpeg",
-    "scheme": "deleevro",
+    "icon": "./assets/images/ciboee.png",
+    "scheme": "ciboee",
     "updates": {
       "enabled": true,
       "checkAutomatically": "ON_LOAD", 
@@ -20,18 +20,33 @@
 
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.hc.deleevro"
+      "bundleIdentifier": "com.esagono.ciboee",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "entitlements": {
+        "aps-environment": "production"
+      }
     },
     "android": {
-      "package": "com.hc.deleevro"
+      "package": "com.ciboee.app",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/appicon.jpeg"
+      "favicon": "./assets/images/ciboee.png"
     },
     "plugins": [
       "expo-router",
+      "@react-native-firebase/app",
+      "@react-native-firebase/messaging",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
       [
         "expo-location",
         {
@@ -43,12 +58,6 @@
           "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
           "recordAudioAndroid": true
         }],
-        [
-          "onesignal-expo-plugin",
-          {
-            "mode": "development"
-          }
-        ],
         "./translucent-default-splash-screen-config"
       ]
     ,

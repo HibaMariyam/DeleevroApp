@@ -44,7 +44,7 @@ if (getRNMinorVersion() >= 75) {
   }
 }
 
-rootProject.name = 'Deleevro'
+rootProject.name = 'Ciboee'
 
 dependencyResolutionManagement {
   versionCatalogs {

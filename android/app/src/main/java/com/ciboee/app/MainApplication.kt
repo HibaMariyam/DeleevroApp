@@ -1,4 +1,4 @@
-package com.hc.deleevro
+package com.ciboee.app
 
 import android.app.Application
 import android.content.res.Configuration

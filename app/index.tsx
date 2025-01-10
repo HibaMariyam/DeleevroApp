@@ -8,6 +8,8 @@ import {
   ActivityIndicator,
   Image,
   StyleSheet,
+  Alert,
+  SafeAreaView,
 } from "react-native";
 import Constants from "expo-constants";
 import { WebView } from "react-native-webview";
@@ -21,22 +23,18 @@ import {
 import NetInfo from "@react-native-community/netinfo";
 import { useMessageHandler } from "@/context/message-handler";
 import OfflinePage from "@/components/OfflinePage";
-import { LogLevel, NotificationClickEvent, OneSignal } from 'react-native-onesignal';
 import { SplashScreen, useNavigation } from "expo-router";
+import { registerForPushNotificationsAsync } from "@/components/fcm";
+import * as Notifications from 'expo-notifications';
+import messaging from '@react-native-firebase/messaging';
 
-
-OneSignal.Debug.setLogLevel(LogLevel.Verbose);
-OneSignal.initialize("");
-
-// Also need enable notifications to complete OneSignal setup
-OneSignal.Notifications.requestPermission(true);
 
 SplashScreen.preventAutoHideAsync();
 
 const isLocal = false;
 const baseUrl = isLocal
-  ? " http://192.168.31.176:5188/"
-  : "https://deleevro.howincloud.com";
+  ? "http://192.168.31.131:3000/"
+  : "https://del.howincloud.com/";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -59,21 +57,17 @@ export default function App() {
       }),
     [canGoBack, currentUrl, lastBackPressedTime]
   );
+  const requestUserPermission = async () => {
+    const authStatus = await messaging().requestPermission();
+    const enabled =
+      authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+      authStatus === messaging.AuthorizationStatus.PROVISIONAL;
 
-
-
-
-  OneSignal.Notifications.addEventListener('click', (event: NotificationClickEvent) => {
-    console.log('OneSignal: notification clicked:', event);
-    const additionalData = event?.notification?.additionalData;
-    const path = (additionalData && 'path' in additionalData) ? (additionalData.path as string) : '';
-    console.log('notification path:', path);
-    if (path && webViewRef.current) {
-      const newUrl = `${baseUrl}${path}`;
-      setCurrentUrl(newUrl);
+    if (enabled) {
+      console.log("Authorization status:", authStatus);
     }
-  });
-
+    return enabled;
+  };
 
   useEffect(() => {
     if (Platform.OS === "android") {
@@ -84,10 +78,65 @@ export default function App() {
   }, [backPressCallback]);
 
   useEffect(() => {
+    registerForPushNotificationsAsync();
+  }, []);
+
+  useEffect(() => {
+    (async () => {
+      if (await requestUserPermission()) {
+        const token = await messaging().getToken();
+        console.log(token);
+      }
+    })();
+  }, []);
+
+  useEffect(() => {
+    messaging()
+      .getToken()
+      .then(
+        token => {
+          webViewRef.current?.injectJavaScript(
+            `window.localStorage.setItem('fcm_token', '${token}');`
+          );
+          console.log("FCM token:", token);
+        },
+        error => console.error("Failed to get FCM token:", error)
+      );
+  }, []);
+
+
+  useEffect(() => {
+    // Listener for incoming notifications
+    const notificationListener = Notifications.addNotificationReceivedListener(notification => {
+      console.log('Notification received:', notification);
+    });
+
+    // Listener for user interaction with notifications
+    const responseListener = Notifications.addNotificationResponseReceivedListener(response => {
+      console.log('Notification response received:', response);
+    });
+
+    // Cleanup listeners when the component unmounts
+    return () => {
+      Notifications.removeNotificationSubscription(notificationListener);
+      Notifications.removeNotificationSubscription(responseListener);
+    };
+  }, []);
+
+
+
+  useEffect(() => {
     const unsubscribe = NetInfo.addEventListener((state) => {
       setIsConnected(state.isConnected!);
     });
   });
+  useEffect(() => {
+    const unsubscribe = messaging().onMessage(async remoteMessage => {
+      // Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
+    });
+
+    return unsubscribe;
+  }, []);
 
   useEffect(() => {
     if (!loading) {
@@ -97,51 +146,54 @@ export default function App() {
     }
   }, [loading]);
 
-  return (
-    <KeyboardAvoidingView
-      style={{ flex: 1, backgroundColor: "#000" }}
-      keyboardVerticalOffset={Constants.statusBarHeight}
-    >
-      {/* {loading && <Loader />} */}
 
-      {!isConnected ? (
-        <OfflinePage />
-      ) : (
-        <WebView
-          ref={webViewRef}
-          style={[
-            styles.webview,
-            isDarkMode ? styles.darkBackground : styles.lightBackground,
-          ]}
-          source={{ uri: currentUrl }}
-          originWhitelist={["*"]}
-          onLoadStart={() => setLoading(true)}
-          onLoadEnd={() => setLoading(false)}
-          injectedJavaScript={injectedJavaScript}
-          onMessage={handleMessage}
-          geolocationEnabled={true}
-          renderLoading={() => <Loader />}
-          javaScriptEnabled
-          domStorageEnabled
-          startInLoadingState
-          mediaPlaybackRequiresUserAction={false}
-          allowsInlineMediaPlayback
-          mixedContentMode="always"
-          allowsFullscreenVideo
-          userAgent={userAgent}
-          scrollEnabled
-          bounces={false}
-          overScrollMode="never"
-          onNavigationStateChange={(navState) =>
-            handleNavigationStateChange({
-              navState,
-              setCanGoBack,
-              setCurrentUrl,
-            })
-          }
-        />
-      )}
-    </KeyboardAvoidingView>
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <KeyboardAvoidingView
+        style={{ flex: 1, backgroundColor: "#000" }}
+        keyboardVerticalOffset={Constants.statusBarHeight}
+      >
+        {/* {loading && <Loader />} */}
+
+        {!isConnected ? (
+          <OfflinePage />
+        ) : (
+          <WebView
+            ref={webViewRef}
+            style={[
+              styles.webview,
+              isDarkMode ? styles.darkBackground : styles.lightBackground,
+            ]}
+            source={{ uri: currentUrl }}
+            originWhitelist={["*"]}
+            onLoadStart={() => setLoading(true)}
+            onLoadEnd={() => setLoading(false)}
+            injectedJavaScript={injectedJavaScript}
+            onMessage={handleMessage}
+            geolocationEnabled={true}
+            renderLoading={() => <Loader />}
+            javaScriptEnabled
+            domStorageEnabled
+            startInLoadingState
+            mediaPlaybackRequiresUserAction={false}
+            allowsInlineMediaPlayback
+            mixedContentMode="always"
+            allowsFullscreenVideo
+            userAgent={userAgent}
+            scrollEnabled
+            bounces={false}
+            overScrollMode="never"
+            onNavigationStateChange={(navState) =>
+              handleNavigationStateChange({
+                navState,
+                setCanGoBack,
+                setCurrentUrl,
+              })
+            }
+          />
+        )}
+      </KeyboardAvoidingView>
+    </SafeAreaView>
   );
 }
 

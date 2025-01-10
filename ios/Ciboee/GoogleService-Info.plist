@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>129479915653-5bqlb9vgo59gv1k4s56p6jk7j75v7vvs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.129479915653-5bqlb9vgo59gv1k4s56p6jk7j75v7vvs</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>129479915653-0emqqq9krod4dp6affdke7npssr0p8n4.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC-bKvS0LixB8xeMCM14ndHNyQ1-0NirEw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>129479915653</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.esagono.ciboee</string>
+	<key>PROJECT_ID</key>
+	<string>ciboee-559c3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ciboee-559c3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:129479915653:ios:e2b47e12247368109f91ec</string>
+	<key>DATABASE_URL</key>
+	<string>https://ciboee-559c3.firebaseio.com</string>
+</dict>
+</plist>
