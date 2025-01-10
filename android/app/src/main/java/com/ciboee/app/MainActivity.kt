@@ -1,4 +1,4 @@
-package com.hc.deleevro
+package com.ciboee.app
 
 import android.os.Build
 import android.os.Bundle

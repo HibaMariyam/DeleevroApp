@@ -1,0 +1,395 @@
+{
+  "project_info": {
+    "project_number": "129479915653",
+    "firebase_url": "https://ciboee-559c3.firebaseio.com",
+    "project_id": "ciboee-559c3",
+    "storage_bucket": "ciboee-559c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129479915653:android:2b4d4bf3d3b277719f91ec",
+        "android_client_info": {
+          "package_name": "app.ciboee.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMGoMwz4JExjiNJQr2iXtaOZCAKTQ4Zkc"
+        },
+        {
+          "current_key": "AIzaSyBb4s3U9pKXVZFexeT01mDSgjAohuOxgDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129479915653-5bqlb9vgo59gv1k4s56p6jk7j75v7vvs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.esagono.ciboee",
+                "app_store_id": "1571866065"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129479915653:android:69db065a4c2df8129f91ec",
+        "android_client_info": {
+          "package_name": "app.ciboee.rider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129479915653-1hejv8784ifve9lrbkh9149e16d23ikg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.ciboee.rider",
+            "certificate_hash": "74c14bda6e297b9262d5fe895f4ab44261a79e86"
+          }
+        },
+        {
+          "client_id": "129479915653-6g49v5ararl0v03qbb2iagahvjtbqpe7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.ciboee.rider",
+            "certificate_hash": "28a94cc93cb09fb30267ad40d72d1eb53f098118"
+          }
+        },
+        {
+          "client_id": "129479915653-db237nk8knb4f7ui8ghltqfhl3pg64ek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.ciboee.rider",
+            "certificate_hash": "7805c7cabf5fab8b187a7fda4f8ab1ee86aaae45"
+          }
+        },
+        {
+          "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMGoMwz4JExjiNJQr2iXtaOZCAKTQ4Zkc"
+        },
+        {
+          "current_key": "AIzaSyBb4s3U9pKXVZFexeT01mDSgjAohuOxgDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129479915653-5bqlb9vgo59gv1k4s56p6jk7j75v7vvs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.esagono.ciboee",
+                "app_store_id": "1571866065"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129479915653:android:dacbe999bdbf8ab89f91ec",
+        "android_client_info": {
+          "package_name": "app.ciboee.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMGoMwz4JExjiNJQr2iXtaOZCAKTQ4Zkc"
+        },
+        {
+          "current_key": "AIzaSyBb4s3U9pKXVZFexeT01mDSgjAohuOxgDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129479915653-5bqlb9vgo59gv1k4s56p6jk7j75v7vvs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.esagono.ciboee",
+                "app_store_id": "1571866065"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129479915653:android:f3a74d356d6153f39f91ec",
+        "android_client_info": {
+          "package_name": "com.ciboee.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMGoMwz4JExjiNJQr2iXtaOZCAKTQ4Zkc"
+        },
+        {
+          "current_key": "AIzaSyBb4s3U9pKXVZFexeT01mDSgjAohuOxgDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129479915653-5bqlb9vgo59gv1k4s56p6jk7j75v7vvs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.esagono.ciboee",
+                "app_store_id": "1571866065"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129479915653:android:e7eedd865e7a299c9f91ec",
+        "android_client_info": {
+          "package_name": "com.ciboee.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129479915653-50nb10ukbei5f7qrhlss97uuv2o6bd90.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.app",
+            "certificate_hash": "7805c7cabf5fab8b187a7fda4f8ab1ee86aaae45"
+          }
+        },
+        {
+          "client_id": "129479915653-clchs21ji8m0mobf8v2aiebbmtrjt26i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.app",
+            "certificate_hash": "1c5fa5ff909cd21d3ba4a551a170473bf17add5d"
+          }
+        },
+        {
+          "client_id": "129479915653-heu1o4qldo72c14amn3afb5l916spjnk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.app",
+            "certificate_hash": "bd69564c492d81010258825a55e920259376cf40"
+          }
+        },
+        {
+          "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMGoMwz4JExjiNJQr2iXtaOZCAKTQ4Zkc"
+        },
+        {
+          "current_key": "AIzaSyBb4s3U9pKXVZFexeT01mDSgjAohuOxgDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129479915653-5bqlb9vgo59gv1k4s56p6jk7j75v7vvs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.esagono.ciboee",
+                "app_store_id": "1571866065"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129479915653:android:ff8fdf953b72e7dc9f91ec",
+        "android_client_info": {
+          "package_name": "com.ciboee.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129479915653-0emqqq9krod4dp6affdke7npssr0p8n4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.provider",
+            "certificate_hash": "74c14bda6e297b9262d5fe895f4ab44261a79e86"
+          }
+        },
+        {
+          "client_id": "129479915653-efb50tai6u49jss75e5i2gmfm5058ajk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.provider",
+            "certificate_hash": "96597a360108a0c93f038401f54ed3eea22987d5"
+          }
+        },
+        {
+          "client_id": "129479915653-fhvd7adjbcq93bf8tcai532adma888mr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.provider",
+            "certificate_hash": "f496b56d2f38033d8107ca644b0ec6263bf482c1"
+          }
+        },
+        {
+          "client_id": "129479915653-i6mehr47k3cp2ng6n88o1up4ll8of2f4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.provider",
+            "certificate_hash": "eb716407d7671a19702db07a35b706d9898b0548"
+          }
+        },
+        {
+          "client_id": "129479915653-ssbup4kcj6d9klepok1jcrj2ltcdgji8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.provider",
+            "certificate_hash": "7805c7cabf5fab8b187a7fda4f8ab1ee86aaae45"
+          }
+        },
+        {
+          "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMGoMwz4JExjiNJQr2iXtaOZCAKTQ4Zkc"
+        },
+        {
+          "current_key": "AIzaSyBb4s3U9pKXVZFexeT01mDSgjAohuOxgDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129479915653-5bqlb9vgo59gv1k4s56p6jk7j75v7vvs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.esagono.ciboee",
+                "app_store_id": "1571866065"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129479915653:android:79b045da2b3a31cb9f91ec",
+        "android_client_info": {
+          "package_name": "com.ciboee.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129479915653-88gl62c7g5jnm5c4fav28l0a5rdheaoe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.shop",
+            "certificate_hash": "727f282d145921271622c4a97a4a8e72637c0a45"
+          }
+        },
+        {
+          "client_id": "129479915653-mthgi4qrek4lorngiv7qh9621g1t97je.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ciboee.shop",
+            "certificate_hash": "96597a360108a0c93f038401f54ed3eea22987d5"
+          }
+        },
+        {
+          "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMGoMwz4JExjiNJQr2iXtaOZCAKTQ4Zkc"
+        },
+        {
+          "current_key": "AIzaSyBb4s3U9pKXVZFexeT01mDSgjAohuOxgDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129479915653-1e5ik47067496ruogbjhrempcj1illeh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "129479915653-5bqlb9vgo59gv1k4s56p6jk7j75v7vvs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.esagono.ciboee",
+                "app_store_id": "1571866065"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

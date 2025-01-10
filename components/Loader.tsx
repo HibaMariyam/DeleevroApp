@@ -4,7 +4,7 @@ import { View, Image, StyleSheet } from 'react-native';
 export default function Loader() {
     return (
         <View style={styles.loader}>
-            <Image source={require('../assets/images/deleevro_splash_screen.png')} style={styles.loaderImage} />
+            <Image source={require('../assets/images/ciboee-splash.png')} style={styles.loaderImage} />
         </View>
     );
 }

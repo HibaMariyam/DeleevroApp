@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "Deleevro.app"
-               BlueprintName = "Deleevro"
-               ReferencedContainer = "container:Deleevro.xcodeproj">
+               BuildableName = "Ciboee.app"
+               BlueprintName = "Ciboee"
+               ReferencedContainer = "container:Ciboee.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "DeleevroTests.xctest"
-               BlueprintName = "DeleevroTests"
-               ReferencedContainer = "container:Deleevro.xcodeproj">
+               BuildableName = "CiboeeTests.xctest"
+               BlueprintName = "CiboeeTests"
+               ReferencedContainer = "container:Ciboee.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Deleevro.app"
-            BlueprintName = "Deleevro"
-            ReferencedContainer = "container:Deleevro.xcodeproj">
+            BuildableName = "Ciboee.app"
+            BlueprintName = "Ciboee"
+            ReferencedContainer = "container:Ciboee.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "Deleevro.app"
-            BlueprintName = "Deleevro"
-            ReferencedContainer = "container:Deleevro.xcodeproj">
+            BuildableName = "Ciboee.app"
+            BlueprintName = "Ciboee"
+            ReferencedContainer = "container:Ciboee.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
